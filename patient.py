@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-
+import plotly.express as px
 from PIL import Image
-df=pd.read_excel('https://github.com/nitinsaimajji/FODS/blob/main/data.xlsx')
+df=pd.read_excel('data.xlsx')
 st.title("Patients Details ")
 st.table(df)
 
