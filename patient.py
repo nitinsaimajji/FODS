@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+
 from PIL import Image
 df=pd.read_excel('data.xlsx')
 st.title("Patients Details ")
@@ -29,15 +29,4 @@ if add_data:
     else:
         st.warning('Caution wrong details entered ,Please enter correct details ! .')
 
-# # Using object notation
-# add_selectbox = st.sidebar.selectbox(
-#     "How would you like to be contacted?",
-#     ("Email", "Home phone", "Mobile phone")
-# )
 
-# # Using "with" notation
-# with st.sidebar:
-#     add_radio = st.radio(
-#         "Choose a shipping method",
-#         ("Standard (5-15 days)", "Express (2-5 days)")
-#     )
